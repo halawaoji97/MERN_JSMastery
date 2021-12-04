@@ -1,0 +1,30 @@
+BACK END:
+1. install : express cors mongoose bodyParser
+2. Setting mongodbAtlas
+3. Setting Port & Connection database in index.js
+4. Create folder routes->posts.js
+    - This file call the method from controllers
+    - Setting router
+    - Call the routes in App.js
+5. Create folder controllers->posts.js
+    - This file call the postMessage from models
+    - Call the postMessage
+    - Use try catch
+    - Setting the status of respon
+6. Create folder models->postMessage.js  
+    - This file is for Setting the Schema database
+    - Setting Schema
+
+
+FRONT END:
+1. install axios moment react-file-base64 redux redux-thunk material-ui
+2. Create all compoents
+3. Create the folder api->index.js
+    - This file is to fetch the url with axios
+4. Create folder reducer->
+    - posts.js to set the initial state and return the result of action type from action->posts.js
+    - index.js to call the action from posts.js and combine it, this is call reducer
+    - this reducer callig by index.js in the root of project
+5. Create folder action->
+    - posts.js to set the action and type of redux and call the api from api 
+6. in component posts->posts.js, use the hook of useSelector to get the current state and consumption them
